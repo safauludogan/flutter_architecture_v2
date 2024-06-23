@@ -1,0 +1,16 @@
+{
+    "hello":{
+        "title":"Ana sayfa"
+    },
+    "general":{
+        "button":{
+            "save":"Kaydet {}"
+        },
+        "dialog":{
+            "version":{
+                "title":"Versiyon",
+                "content":"Versiyon bilgisi"
+            }
+        }
+    }
+}
