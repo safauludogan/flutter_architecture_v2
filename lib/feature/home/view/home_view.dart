@@ -5,6 +5,7 @@ import 'package:flutter_weefit/product/init/language/config/app_environment.dart
 import 'package:flutter_weefit/product/init/language/locale_keys.g.dart';
 import 'package:flutter_weefit/product/init/product_localization.dart';
 import 'package:flutter_weefit/product/utility/constants/enums/locales.dart';
+import 'package:kartal/kartal.dart';
 
 part 'widget/home_app_bar.dart';
 
@@ -28,7 +29,7 @@ class _HomeViewState extends State<HomeView> with HomeViewMixin {
               onPressed: () {},
               child: Text(
                 AppEnvironmentItems.baseUrl.value,
-                style: Theme.of(context).textTheme.bodyMedium,
+                style: context.general.textTheme.bodyLarge,
               ),
             ),
             ElevatedButton(
