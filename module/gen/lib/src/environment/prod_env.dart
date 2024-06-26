@@ -1,5 +1,5 @@
 import 'package:envied/envied.dart';
-import 'package:flutter_weefit/product/init/language/config/app_configuration.dart';
+import 'package:gen/src/environment/app_configuration.dart';
 
 part 'prod_env.g.dart';
 

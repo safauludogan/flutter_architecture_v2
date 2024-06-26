@@ -1,10 +1,11 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_weefit/feature/home/view/mixin/home_view_mixin.dart';
-import 'package:flutter_weefit/product/init/language/config/app_environment.dart';
+import 'package:flutter_weefit/product/init/config/app_environment.dart';
 import 'package:flutter_weefit/product/init/language/locale_keys.g.dart';
 import 'package:flutter_weefit/product/init/product_localization.dart';
 import 'package:flutter_weefit/product/utility/constants/enums/locales.dart';
+import 'package:gen/gen.dart';
 import 'package:kartal/kartal.dart';
 
 part 'widget/home_app_bar.dart';
@@ -25,6 +26,12 @@ class _HomeViewState extends State<HomeView> with HomeViewMixin {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Assets.icons.icCheck.svg(
+              package: 'gen',
+            ),
+            Assets.images.imgBottle.image(
+              package: 'gen'
+            ),
             ElevatedButton(
               onPressed: () {},
               child: Text(
