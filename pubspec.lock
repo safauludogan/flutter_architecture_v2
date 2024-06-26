@@ -298,7 +298,7 @@ packages:
     source: hosted
     version: "3.0.7"
   easy_logger:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: easy_logger
       sha256: c764a6e024846f33405a2342caf91c62e357c24b02c04dbc712ef232bf30ffb7
@@ -574,7 +574,7 @@ packages:
     source: hosted
     version: "3.0.1"
   logger:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: logger
       sha256: af05cc8714f356fd1f3888fb6741cbe9fbe25cdb6eedbab80e1a6db21047d4a4
