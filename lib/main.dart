@@ -1,17 +1,17 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_weefit/feature/home/view/home_view.dart';
+import 'package:flutter_weefit/product/init/application_initialize.dart';
 import 'package:flutter_weefit/product/init/product_localization.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await EasyLocalization.ensureInitialized();
+  await ApplicationInitialize().make();
 
-  runApp(ProductLocalization(child: const MyApp()));
+  runApp(ProductLocalization(child: const _MyApp()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class _MyApp extends StatelessWidget {
+  const _MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
