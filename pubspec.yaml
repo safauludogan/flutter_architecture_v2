@@ -32,6 +32,7 @@ dependencies:
   easy_logger: ^0.0.2
   logger: ^2.3.0
   kartal: ^4.0.4
+  google_fonts: ^6.2.1
 
 
   widgets:

@@ -26,7 +26,10 @@ class _HomeViewState extends State<HomeView> with HomeViewMixin {
           children: [
             ElevatedButton(
               onPressed: () {},
-              child: Text(AppEnvironmentItems.baseUrl.value),
+              child: Text(
+                AppEnvironmentItems.baseUrl.value,
+                style: Theme.of(context).textTheme.bodyMedium,
+              ),
             ),
             ElevatedButton(
               onPressed: () {
