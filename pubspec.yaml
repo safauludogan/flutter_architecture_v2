@@ -35,11 +35,13 @@ dependencies:
   # Navigation
   auto_route: ^8.2.0
 
+  # Modules
   widgets:
     path: module/widgets
-    
   gen:
     path: module/gen
+  common:
+    path: module/common
 
 dev_dependencies:
   flutter_test:
