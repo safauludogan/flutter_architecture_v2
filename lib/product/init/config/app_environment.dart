@@ -1,7 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:flutter_weefit/product/init/language/config/app_configuration.dart';
-import 'package:flutter_weefit/product/init/language/config/env_dev.dart';
-import 'package:flutter_weefit/product/init/language/config/prod_env.dart';
+import 'package:gen/gen.dart';
 
 /// Application environment manager class
 final class AppEnvironment {

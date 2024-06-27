@@ -20,31 +20,36 @@ dependencies:
   # Network
   dio_nexus: ^0.2.1
 
-  #State
+  # State
   riverpod: ^2.5.1
 
   # Config
-  envied: ^0.5.4+1
-  json_annotation: ^4.9.0
   easy_localization: ^3.0.7
 
-  #Utility
+  # Utility
   easy_logger: ^0.0.2
   logger: ^2.3.0
   kartal: ^4.0.4
+  google_fonts: ^6.2.1
 
+  # Navigation
+  auto_route: ^8.2.0
 
+  # Modules
   widgets:
     path: module/widgets
+  gen:
+    path: module/gen
+  common:
+    path: module/common
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   very_good_analysis: ^5.1.0
-  build_runner: ^2.4.11
-  flutter_gen_runner: ^5.5.0+1
   flutter_launcher_icons: ^0.13.1
-  envied_generator: ^0.5.4+1
+  auto_route_generator: ^8.0.0
+  build_runner: ^2.4.11
 
   
 flutter_launcher_icons:
@@ -53,11 +58,6 @@ flutter_launcher_icons:
   image_path: "assets/icon/icon.png"
   min_sdk_android: 21
   remove_alpha_ios: true
-
-flutter_gen:
-  output: lib/product/generated/
-  integrations:
-    lottie: true
 
 flutter:
   uses-material-design: true
