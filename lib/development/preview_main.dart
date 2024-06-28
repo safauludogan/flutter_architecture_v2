@@ -6,11 +6,14 @@ import 'package:flutter_weefit/product/init/theme/custom_dark_theme.dart';
 import 'package:flutter_weefit/product/init/theme/custom_light_theme.dart';
 import 'package:flutter_weefit/product/navigation/app_router.dart';
 import 'package:widgets/widgets.dart';
+import 'package:device_preview/device_preview.dart';
 
 Future<void> main() async {
   await ApplicationInitialize().make();
 
-  runApp(ProductLocalization(child: const _MyApp()));
+  runApp(DevicePreview(
+    builder: (context) => ProductLocalization(child: const _MyApp()),
+  ));
 }
 
 class _MyApp extends StatelessWidget {
