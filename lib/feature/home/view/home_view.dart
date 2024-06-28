@@ -17,12 +17,7 @@ final class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> with HomeViewMixin {
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-  }
-
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(

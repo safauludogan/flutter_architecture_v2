@@ -17,6 +17,9 @@ dependencies:
   envied: ^0.5.4+1
   equatable: ^2.0.5
 
+  # Network
+  dio_nexus: ^0.2.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
