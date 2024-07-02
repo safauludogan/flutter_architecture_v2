@@ -5,6 +5,7 @@ import 'package:easy_logger/easy_logger.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_weefit/product/init/config/app_environment.dart';
+import 'package:flutter_weefit/product/state/container/product_state_container.dart';
 import 'package:kartal/kartal.dart';
 import 'package:logger/logger.dart';
 
@@ -45,7 +46,15 @@ final class ApplicationInitialize {
       Logger().e(details.exceptionAsString());
     };
 
+    _productEnvironmentWithContainer();
+  }
+
+  static void _productEnvironmentWithContainer() {
     /// AppEnvironment operations initialize
     AppEnvironment.general();
+
+    /// Register GetIt instances
+    /// It must bu call after [AppEnvironment.general()]
+    ProductContainer.setup();
   }
 }
