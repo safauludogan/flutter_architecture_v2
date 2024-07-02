@@ -1,23 +1,30 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_weefit/feature/home/view/home_view.dart';
+import 'package:flutter_weefit/feature/home/view_model/home_view_model.dart';
+import 'package:flutter_weefit/feature/home/view_model/state/base/base_state.dart';
+import 'package:flutter_weefit/product/service/login_service.dart';
 import 'package:flutter_weefit/product/service/manager/product_network_error_manager.dart';
-import 'package:flutter_weefit/product/service/manager/product_service_manager.dart';
+import 'package:flutter_weefit/product/state/container/product_state_items.dart';
 
 /// Manage your home view business logic
-mixin HomeViewMixin on State<HomeView> {
-  late final ProductNetworkManager manager;
-  late final ProductNetworkErrorManager productNetworkErrorManager;
+mixin HomeViewMixin on BaseState<HomeView> {
+  late final ProductNetworkErrorManager _productNetworkErrorManager;
+  late final HomeViewModel _homeViewModel;
+
+  HomeViewModel get homeViewModel => _homeViewModel;
 
   @override
   void initState() {
     super.initState();
-    manager = ProductNetworkManager.base();
-    productNetworkErrorManager = ProductNetworkErrorManager(context);
+    _productNetworkErrorManager = ProductNetworkErrorManager(context);
 
-    manager.listenErrorState(
+    ProductStateItems.productNetworkManager.listenErrorState(
       onErrorStatus: (value) {
-        productNetworkErrorManager.handleError(value);
+        _productNetworkErrorManager.handleError(value);
       },
+    );
+
+    _homeViewModel = HomeViewModel(
+      operationService: LoginService(productNetworkManager),
     );
   }
 }

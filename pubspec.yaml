@@ -16,12 +16,13 @@ dependencies:
 
   # Core
   equatable: ^2.0.5
+  get_it: ^7.7.0
 
   # Network
   dio_nexus: ^0.2.1
 
   # State
-  riverpod: ^2.5.1
+  flutter_bloc: ^8.1.6
 
   # Config
   easy_localization: ^3.0.7
