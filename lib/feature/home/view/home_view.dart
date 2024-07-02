@@ -28,7 +28,6 @@ class _HomeViewState extends BaseState<HomeView> with HomeViewMixin {
           onPressed: () async {
             productViewModel.changeThemeMode(ThemeMode.dark);
             await homeViewModel.fetchUsers();
-            //productViewModel.changeThemeMode(ThemeMode.light);
           },
         ),
         body: const Center(
@@ -51,7 +50,6 @@ final class _UserList extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocListener<HomeViewModel, HomeState>(
       listener: (context, state) {
-        print(state.users?.length);
       },
       child: BlocSelector<HomeViewModel, HomeState, List<User>>(
         selector: (state) => state.users ?? [],

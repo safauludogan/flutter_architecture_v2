@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_weefit/product/init/config/app_environment.dart';
 import 'package:flutter_weefit/product/state/container/product_state_container.dart';
+import 'package:flutter_weefit/product/state/container/product_state_items.dart';
 import 'package:kartal/kartal.dart';
 import 'package:logger/logger.dart';
 
@@ -47,6 +48,8 @@ final class ApplicationInitialize {
     };
 
     _productEnvironmentWithContainer();
+
+    await ProductStateItems.productCache.init();
   }
 
   static void _productEnvironmentWithContainer() {

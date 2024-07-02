@@ -17,7 +17,7 @@ Future<void> main() async {
 }
 
 class _MyApp extends StatelessWidget {
-  const _MyApp({super.key});
+  const _MyApp();
 
   static final _appRouter = AppRouter();
 
