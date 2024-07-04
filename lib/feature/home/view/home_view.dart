@@ -8,6 +8,7 @@ import 'package:flutter_weefit/feature/home/view_model/state/home_state.dart';
 import 'package:gen/gen.dart';
 
 part 'widget/home_app_bar.dart';
+part 'widget/home_user_bloc_list.dart';
 
 @RoutePage()
 final class HomeView extends StatefulWidget {
@@ -34,7 +35,7 @@ class _HomeViewState extends BaseState<HomeView> with HomeViewMixin {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Expanded(child: _UserList()),
+              Expanded(child: _UserBlocList()),
             ],
           ),
         ),
@@ -43,30 +44,4 @@ class _HomeViewState extends BaseState<HomeView> with HomeViewMixin {
   }
 }
 
-final class _UserList extends StatelessWidget {
-  const _UserList();
 
-  @override
-  Widget build(BuildContext context) {
-    return BlocListener<HomeViewModel, HomeState>(
-      listener: (context, state) {
-      },
-      child: BlocSelector<HomeViewModel, HomeState, List<User>>(
-        selector: (state) => state.users ?? [],
-        builder: (context, state) {
-          if (state.isEmpty) return const SizedBox.shrink();
-          return ListView.builder(
-            itemCount: state.length,
-            itemBuilder: (BuildContext context, int index) {
-              return ListTile(
-                trailing: Text(state[index].userId.toString()),
-                title: Text(state[index].title ?? ''),
-                subtitle: Text(state[index].body ?? ''),
-              );
-            },
-          );
-        },
-      ),
-    );
-  }
-}
