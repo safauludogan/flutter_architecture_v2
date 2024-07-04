@@ -2,11 +2,9 @@ import 'package:core/src/cache/core/cache_model.dart';
 import 'package:core/src/cache/core/cache_operation.dart';
 import 'package:hive/hive.dart';
 
-
 /// The HiveCacheOperation class is an
 /// implementation of the CacheOperation class.
-final class HiveCacheOperation<T extends CacheModel> extends CacheOperation<T> {
-
+class HiveCacheOperation<T extends CacheModel> extends CacheOperation<T> {
   /// Initialize hive box
   HiveCacheOperation() {
     _box = Hive.box<T>(name: T.toString());
