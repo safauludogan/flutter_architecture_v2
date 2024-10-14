@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_weefit/product/init/theme/custom_color_scheme.dart';
-import 'package:flutter_weefit/product/init/theme/custom_theme.dart';
+import 'package:flutter_architecture_v2/product/init/theme/custom_color_scheme.dart';
+import 'package:flutter_architecture_v2/product/init/theme/custom_theme.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 /// Custom light theme for project design

@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_weefit/product/utility/constants/enums/locales.dart';
+import 'package:flutter_architecture_v2/product/utility/constants/enums/locales.dart';
 
 @immutable
 

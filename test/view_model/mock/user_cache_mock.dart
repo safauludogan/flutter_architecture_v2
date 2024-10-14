@@ -1,5 +1,5 @@
 import 'package:core/core.dart';
-import 'package:flutter_weefit/product/cache/model/user_cache_model.dart';
+import 'package:flutter_architecture_v2/product/cache/model/user_cache_model.dart';
 import 'package:mockito/mockito.dart';
 
 final class UserCacheMock extends Mock

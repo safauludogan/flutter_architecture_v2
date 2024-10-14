@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_weefit/product/utility/constants/project_radius.dart';
+import 'package:flutter_architecture_v2/product/utility/constants/project_radius.dart';
 
 /// Radius is 20
 final class NormalButton extends StatelessWidget {

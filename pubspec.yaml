@@ -1,25 +1,25 @@
-name: flutter_weefit
-description: "Weefit calorie tracing app"
+name: flutter_architecture_v2
+description: "Flutter Architecture Template V2"
 
 publish_to: 'none'
 
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.4.1 <4.0.0'
+  sdk: ^3.5.2
 
 dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.6
+  cupertino_icons: ^1.0.8
 
   # Core
   equatable: ^2.0.5
-  get_it: ^7.7.0
+  get_it: ^8.0.0
 
   # Network
-  dio_nexus: ^0.2.1
+  dio_nexus: ^0.2.2
 
   # State
   flutter_bloc: ^8.1.6
@@ -29,12 +29,12 @@ dependencies:
 
   # Utility
   easy_logger: ^0.0.2
-  logger: ^2.3.0
-  kartal: ^4.0.4
+  logger: ^2.4.0
+  kartal: ^4.1.0
   google_fonts: ^6.2.1
 
   # Navigation
-  auto_route: ^8.2.0
+  auto_route: ^9.2.2
 
   # Modules
   widgets:
@@ -47,17 +47,16 @@ dependencies:
     path: module/core
 
 dev_dependencies:
-  integration_test:
   flutter_test:
     sdk: flutter
-  very_good_analysis: ^5.1.0
-  flutter_launcher_icons: ^0.13.1
-  auto_route_generator: ^8.0.0
-  build_runner: ^2.4.11
+  very_good_analysis: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+  auto_route_generator: ^9.0.0
+  build_runner: ^2.4.13
   device_preview: ^1.2.0
   mockito: ^5.4.4
   bloc_test: ^9.1.7
-  patrol: ^3.9.0
+  patrol: ^3.11.1
 
   
 flutter_launcher_icons:

@@ -2,9 +2,9 @@ import 'dart:io';
 
 import 'package:dio_nexus/dio_nexus.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_weefit/product/init/config/app_environment.dart';
-import 'package:flutter_weefit/product/service/manager/product_service_manager.dart';
-import 'package:flutter_weefit/product/service/manager/product_service_path.dart';
+import 'package:flutter_architecture_v2/product/init/config/app_environment.dart';
+import 'package:flutter_architecture_v2/product/service/manager/product_service_manager.dart';
+import 'package:flutter_architecture_v2/product/service/manager/product_service_path.dart';
 import 'package:gen/gen.dart';
 
 void main() {

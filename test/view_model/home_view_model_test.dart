@@ -1,7 +1,7 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_weefit/feature/home/view_model/home_view_model.dart';
-import 'package:flutter_weefit/feature/home/view_model/state/home_state.dart';
+import 'package:flutter_architecture_v2/feature/home/view_model/home_view_model.dart';
+import 'package:flutter_architecture_v2/feature/home/view_model/state/home_state.dart';
 
 import 'mock/login_service_mock.dart';
 import 'mock/user_cache_mock.dart';

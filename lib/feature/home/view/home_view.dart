@@ -1,10 +1,10 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_architecture_v2/feature/home/view/mixin/home_view_mixin.dart';
+import 'package:flutter_architecture_v2/feature/home/view_model/home_view_model.dart';
+import 'package:flutter_architecture_v2/feature/home/view_model/state/base/base_state.dart';
+import 'package:flutter_architecture_v2/feature/home/view_model/state/home_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_weefit/feature/home/view/mixin/home_view_mixin.dart';
-import 'package:flutter_weefit/feature/home/view_model/home_view_model.dart';
-import 'package:flutter_weefit/feature/home/view_model/state/base/base_state.dart';
-import 'package:flutter_weefit/feature/home/view_model/state/home_state.dart';
 import 'package:gen/gen.dart';
 
 part 'widget/home_app_bar.dart';
@@ -43,5 +43,3 @@ class _HomeViewState extends BaseState<HomeView> with HomeViewMixin {
     );
   }
 }
-
-

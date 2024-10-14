@@ -2,8 +2,7 @@ import 'dart:io';
 
 import 'package:dio_nexus/dio_nexus.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_weefit/product/init/config/app_environment.dart';
-
+import 'package:flutter_architecture_v2/product/init/config/app_environment.dart';
 
 /// Product network manager for backend api
 final class ProductNetworkManager extends DioNexusManager {
@@ -12,7 +11,7 @@ final class ProductNetworkManager extends DioNexusManager {
       : super(
           options: BaseOptions(
             baseUrl: AppEnvironmentItems.baseUrl.value,
-             headers: {'Content-Type': 'application/json'},
+            headers: {'Content-Type': 'application/json'},
           ),
         );
 

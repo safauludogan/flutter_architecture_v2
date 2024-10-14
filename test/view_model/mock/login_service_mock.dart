@@ -1,4 +1,4 @@
-import 'package:flutter_weefit/product/service/interface/authentication_service.dart';
+import 'package:flutter_architecture_v2/product/service/interface/authentication_service.dart';
 import 'package:gen/gen.dart';
 import 'package:mockito/mockito.dart';
 

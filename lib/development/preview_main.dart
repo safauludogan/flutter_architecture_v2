@@ -1,12 +1,12 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_weefit/product/init/application_initialize.dart';
-import 'package:flutter_weefit/product/init/product_localization.dart';
-import 'package:flutter_weefit/product/init/theme/custom_dark_theme.dart';
-import 'package:flutter_weefit/product/init/theme/custom_light_theme.dart';
-import 'package:flutter_weefit/product/navigation/app_router.dart';
+import 'package:flutter_architecture_v2/product/init/application_initialize.dart';
+import 'package:flutter_architecture_v2/product/init/product_localization.dart';
+import 'package:flutter_architecture_v2/product/init/theme/custom_dark_theme.dart';
+import 'package:flutter_architecture_v2/product/init/theme/custom_light_theme.dart';
+import 'package:flutter_architecture_v2/product/navigation/app_router.dart';
 import 'package:widgets/widgets.dart';
-import 'package:device_preview/device_preview.dart';
 
 Future<void> main() async {
   await ApplicationInitialize().make();

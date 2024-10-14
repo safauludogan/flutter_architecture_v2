@@ -1,4 +1,4 @@
-# flutter_weefit
+# flutter_architecture_v2
 
 Weefit calorie tracing app
 

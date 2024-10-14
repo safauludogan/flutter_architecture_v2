@@ -4,9 +4,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:easy_logger/easy_logger.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_weefit/product/init/config/app_environment.dart';
-import 'package:flutter_weefit/product/state/container/product_state_container.dart';
-import 'package:flutter_weefit/product/state/container/product_state_items.dart';
+import 'package:flutter_architecture_v2/product/init/config/app_environment.dart';
+import 'package:flutter_architecture_v2/product/state/container/product_state_container.dart';
+import 'package:flutter_architecture_v2/product/state/container/product_state_items.dart';
 import 'package:kartal/kartal.dart';
 import 'package:logger/logger.dart';
 
