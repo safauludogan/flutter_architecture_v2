@@ -9,11 +9,17 @@ final class ProductCache {
   final CacheManager _cacheManager;
 
   Future<void> init() async {
-    await _cacheManager.init(
-      items: [
-        UserCacheModel.empty(),
-      ],
-    );
+    await _cacheManager.init();
+  }
+
+  /// Register cache models
+  void register<T extends CacheModel<T>>(T model, HiveAdapterId hiveAdapterId) {
+    _cacheManager.register(model, hiveAdapterId);
+  }
+
+  /// Clear all from disk caches
+  Future<void> removeFromDisk() async {
+    await _cacheManager.remove();
   }
 
   late final HiveCacheOperation<UserCacheModel> userCacheOperation =
