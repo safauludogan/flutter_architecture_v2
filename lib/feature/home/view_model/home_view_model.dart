@@ -4,6 +4,7 @@ import 'package:flutter_architecture_v2/feature/home/view_model/state/home_state
 import 'package:flutter_architecture_v2/product/cache/model/user_cache_model.dart';
 import 'package:flutter_architecture_v2/product/service/interface/authentication_service.dart';
 import 'package:gen/gen.dart';
+import 'package:kartal/kartal.dart';
 
 /// Manager your home view business logic
 class HomeViewModel extends BaseCubit<HomeState> {
@@ -36,6 +37,11 @@ class HomeViewModel extends BaseCubit<HomeState> {
     for (final user in users) {
       _userCacheOperation.add(UserCacheModel(user: user));
     }
+  }
+
+  void getUsersFromCache() {
+    final response = _userCacheOperation.getAll();
+    emit(state.copyWith(users: response.map((e) => e.user).toList()));
   }
 
   /// Get users from hive cache

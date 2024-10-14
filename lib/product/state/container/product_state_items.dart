@@ -1,3 +1,4 @@
+import 'package:core/core.dart';
 import 'package:flutter_architecture_v2/product/cache/product_cache.dart';
 import 'package:flutter_architecture_v2/product/service/manager/product_service_manager.dart';
 import 'package:flutter_architecture_v2/product/state/container/product_state_container.dart';
@@ -13,4 +14,7 @@ final class ProductStateItems {
       ProductContainer.read<ProductViewModel>();
 
   static ProductCache get productCache => ProductContainer.read<ProductCache>();
+
+  static SharedCacheOperation get productSharedCache =>
+      ProductContainer.read<SharedCacheOperation>();
 }

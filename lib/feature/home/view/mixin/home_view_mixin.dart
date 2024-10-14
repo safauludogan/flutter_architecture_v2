@@ -27,5 +27,7 @@ mixin HomeViewMixin on BaseState<HomeView> {
       operationService: LoginService(productNetworkManager),
       userCacheOperation: ProductStateItems.productCache.userCacheOperation,
     );
+
+    _homeViewModel.getUsersFromCache();
   }
 }

@@ -1,10 +1,11 @@
-import 'package:core/src/cache/core/cache_model.dart';
 
-abstract class CacheOperation<T extends CacheModel> {
+import 'package:core/core.dart';
+
+abstract class CacheOperation<T extends CacheModel<T>> {
   void add(T item);
   void addAll(List<T> items);
+  void update(T item);
   void remove(String id);
-  void clear();
 
   List<T> getAll();
   T? get(String id);
