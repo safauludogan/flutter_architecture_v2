@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:ui';
 
 import 'package:dio_nexus/dio_nexus.dart';
 import 'package:flutter/foundation.dart';
@@ -13,6 +14,8 @@ final class ProductNetworkManager extends DioNexusManager {
             baseUrl: AppEnvironmentItems.baseUrl.value,
             headers: {'Content-Type': 'application/json'},
           ),
+          locale: const Locale('tr'),
+          printLogsDebugMode: false,
         );
 
   /// Error handler

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture_v2/feature/home/view_model/state/base/base_cubit.dart';
+import 'package:flutter_architecture_v2/product/state/base/base_cubit.dart';
 import 'package:flutter_architecture_v2/product/state/view_model/product_state.dart';
 
 final class ProductViewModel extends BaseCubit<ProductState> {

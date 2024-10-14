@@ -1,10 +1,9 @@
 import 'package:core/core.dart';
-import 'package:flutter_architecture_v2/feature/home/view_model/state/base/base_cubit.dart';
 import 'package:flutter_architecture_v2/feature/home/view_model/state/home_state.dart';
 import 'package:flutter_architecture_v2/product/cache/model/user_cache_model.dart';
 import 'package:flutter_architecture_v2/product/service/interface/authentication_service.dart';
+import 'package:flutter_architecture_v2/product/state/base/base_cubit.dart';
 import 'package:gen/gen.dart';
-import 'package:kartal/kartal.dart';
 
 /// Manager your home view business logic
 class HomeViewModel extends BaseCubit<HomeState> {

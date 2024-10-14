@@ -3,6 +3,7 @@ import 'package:flutter_architecture_v2/product/cache/product_cache.dart';
 import 'package:flutter_architecture_v2/product/service/manager/product_service_manager.dart';
 import 'package:flutter_architecture_v2/product/state/container/product_state_container.dart';
 import 'package:flutter_architecture_v2/product/state/view_model/product_view_model.dart';
+import 'package:widgets/widgets.dart';
 
 final class ProductStateItems {
   const ProductStateItems._();
@@ -17,4 +18,6 @@ final class ProductStateItems {
 
   static SharedCacheOperation get productSharedCache =>
       ProductContainer.read<SharedCacheOperation>();
+
+  static ToastService get toastService => ProductContainer.read<ToastService>();
 }
