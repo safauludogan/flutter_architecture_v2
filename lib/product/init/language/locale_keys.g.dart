@@ -10,5 +10,10 @@ abstract class  LocaleKeys {
   static const general_dialog_version = 'general.dialog.version';
   static const general_dialog = 'general.dialog';
   static const general = 'general';
+  static const validation_firstName = 'validation.firstName';
+  static const validation_lastName = 'validation.lastName';
+  static const validation_phoneNumber = 'validation.phoneNumber';
+  static const validation_needs = 'validation.needs';
+  static const validation = 'validation';
 
 }
