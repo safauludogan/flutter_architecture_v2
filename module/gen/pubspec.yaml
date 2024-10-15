@@ -4,7 +4,7 @@ version: 0.0.1
 homepage: none
 
 environment:
-  sdk: '>=3.4.1 <4.0.0'
+  sdk: ^3.5.2
   flutter: ">=1.17.0"
 
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
 
   json_annotation: ^4.9.0
   flutter_svg: ^2.0.10+1
-  lottie: ^3.1.2
+  lottie: ^3.1.3
   envied: ^0.5.4+1
   equatable: ^2.0.5
 
@@ -24,10 +24,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   very_good_analysis: ^6.0.0
-  build_runner: ^2.4.11
+  build_runner: ^2.4.13
   envied_generator: ^0.5.4+1
   json_serializable: ^6.8.0
-  flutter_gen_runner: ^5.6.0
+  flutter_gen_runner: ^5.8.0
 
 flutter_gen:
   output: lib/src/asset/

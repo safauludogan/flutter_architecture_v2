@@ -12,5 +12,14 @@
                 "content":"Version info"
             }
         }
+    },
+
+    
+    "validation": {
+        "firstName": "Please enter your first name in the correct format.",
+        "lastName": "Please enter your last name in the correct format.",
+        "phoneNumber": "Please enter a valid phone number.",
+        "needs": "Please select your need."
     }
+
 }

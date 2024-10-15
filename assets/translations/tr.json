@@ -12,5 +12,12 @@
                 "content":"Versiyon bilgisi"
             }
         }
+    },
+
+    "validation": {
+        "firstName": "Adınızı doğru formatta giriniz.",
+        "lastName": "Soyadınızı doğru formatta giriniz.",
+        "phoneNumber": "Lütfen geçerli bir telefon numarası giriniz.",
+        "needs": "Lütfen ihtiyacınızı seçiniz"
     }
 }
